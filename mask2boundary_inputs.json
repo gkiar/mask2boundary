@@ -1,0 +1,5 @@
+{
+    "mask": "/data/brain_mask.nii.gz",
+    "output": "/data/brain_mask_boundary.nii.gz",
+    "width": 3
+}

@@ -50,14 +50,14 @@ def make_descriptor(parser, arguments=None):
 
 
 def main():
-    parser = ArgumentParser(__name__)
+    parser = ArgumentParser(__file__)
     parser.add_argument("mask",
                         help="Nifti image containing a binary mask.")
     parser.add_argument("output",
                         help="Path for output Nifti image containing the mask "
                              "boundary.")
     parser.add_argument("--width", "-w", action="store", type=int,
-                        default=4,
+                        default=3,
                         help="Width of the boundary to be stored.")
     parser.add_argument("--boutiques", action="store_true",
                         help="Toggles creation of a Boutiques descriptor and "
