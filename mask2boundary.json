@@ -1,6 +1,6 @@
 {
     "author": "Greg Kiar",
-    "command-line": "mask2boundary.py [MASK] [OUTPUT] [WIDTH] [BOUTIQUES]",
+    "command-line": "python3 /opt/mask2boundary.py [MASK] [OUTPUT] [WIDTH] [BOUTIQUES]",
     "container-image": {
         "image": "gkiar/mask2boundary:v0.1.0",
         "index": "index.docker.io",
