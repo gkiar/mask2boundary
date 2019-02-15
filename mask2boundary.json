@@ -7,7 +7,7 @@
         "type": "docker"
     },
     "description": "Transforms a binary mask of a niftii image (such as a brain or white matter mask) into a boundary mask. This tool was originally developed to transform a white matter mask into a mask of seed locations for performing tractography in diffusion images.",
-    "doi": "10.5281/zenodo.2553619",
+    "doi": "10.5281/zenodo.2566443",
     "inputs": [
         {
             "description": "Nifti image containing a binary mask.",
@@ -50,10 +50,10 @@
     "name": "mask2boundary",
     "output-files": [
         {
-            "path-template": "[OUTPUT]",
-            "optional": false,
             "id": "mask_boundary",
-            "name": "Boundary Mask"
+            "name": "Boundary Mask",
+            "optional": false,
+            "path-template": "[OUTPUT]"
         }
     ],
     "schema-version": "0.5",
