@@ -2,7 +2,7 @@
     "author": "Greg Kiar",
     "command-line": "mask2boundary.py [MASK] [OUTPUT] [WIDTH] [BOUTIQUES]",
     "container-image": {
-        "image": "gkiar/mask2boundary:latest",
+        "image": "gkiar/mask2boundary:v0.1.0",
         "index": "index.docker.io",
         "type": "docker"
     },
@@ -30,6 +30,8 @@
             "default-value": 3,
             "description": "Width of the boundary to be stored.",
             "id": "width",
+            "integer": true,
+            "minimum": 1,
             "name": "width",
             "optional": true,
             "type": "Number",
@@ -46,6 +48,14 @@
         }
     ],
     "name": "mask2boundary",
+    "output-files": [
+        {
+            "path-template": "[OUTPUT]",
+            "optional": false,
+            "id": "mask_boundary",
+            "name": "Boundary Mask"
+        }
+    ],
     "schema-version": "0.5",
     "suggested-resources": {
         "cpu-cores": 1,
